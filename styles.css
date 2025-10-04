@@ -1,0 +1,81 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background: 
+    /* black transparent stripes on top */
+    repeating-linear-gradient(
+      135deg,                       
+      rgba(0,0,0,0.1) 0px,          /* start black (20% opacity) */
+      rgba(0,0,0,0.1) 1px,          /* thin black line (1px thick) */
+      transparent 1px,              /* gap starts */
+      transparent 3px               /* total stripe width = 3px */
+    ),
+    /* purple gradient underneath */
+    linear-gradient(to bottom, #4A3B76, #4A3B76);
+}
+
+.dark-header-bar {
+    background-color: var(--core-black);
+    opacity: 0.4;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7);
+}
+
+.header-text {
+    color: var(--core-white);
+    margin: 0;
+    padding-left: 6vw;
+    padding-top: 1.75rem;
+    padding-bottom: 3.75rem;
+    line-height: 0.6;
+    display: inline-block;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.header-text > span {
+    font-size: 2.25rem;
+    letter-spacing: 4px;
+    padding-left: 1.75rem;
+}
+
+.tm-icon {
+    font-size: 0.75rem;
+    vertical-align: super;
+    position: relative;
+    top: -0.3rem;
+    left: -1rem;
+}
+
+.navbar {
+    background-color: var(--core-black);
+    opacity: 0.9;
+}
+
+.navbar p {
+    background-color: var(--core-white);
+    display: inline-block;
+    padding: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-left: 6vw;
+}
+
+main {
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+.section-title-text {
+    margin-top: 3rem;
+    border-bottom: 2px solid var(--core-grey-300);
+    padding-bottom: 0.75rem;
+}
