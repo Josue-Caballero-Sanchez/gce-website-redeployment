@@ -6,11 +6,13 @@
   
   <link rel="stylesheet" href="https://aws.gcumedia.com/cdn/core-css/1/core.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
   <title>GCU Time Zone Map</title>
 </head>
 <body>
   <Header>
     <div class="dark-header-bar core-padding-8"></div>
+    <div class="light-header-bar"></div>
     <h1 class="header-text">
       Grand Canyon <br> 
       <span>University <span class="tm-icon">&#8482;</span></span>
@@ -20,8 +22,55 @@
     </div>
   </Header>
 
-  <main>
-    <h2 class="section-title-text">GCU Time Zone Map</h2>
+  <main class="core-flex core-flex-column core-align-items-center">
+    <h2 class="section-title-text core-align-self-stretch">GCU Time Zone Map</h2>
+    <div class="core-flex main-times-container">
+      <div class="core-flex core-flex-column core-align-items-center time-container arizona-time-container">
+        <p>Arizona/GCU</p>
+        <p class="time-text core-center core-align-self-stretch" id="arizona-time"></p>
+      </div>
+
+      <div class="core-flex core-flex-column core-align-items-center time-container local-time-container">
+        <p>My Time</p>
+        <p class="time-text core-center core-align-self-stretch" id="local-time"></p>
+      </div>
+    </div>
+
+    <div class="core-flex main-time-zones-container core-align-self-stretch core-justify-content-evenly">
+      <div class="core-flex core-flex-column core-align-items-center time-container pacific-time-container">
+        <p>Pacific</p>
+        <p class="time-text core-center core-align-self-stretch" id="pacific-time"></p>
+      </div>
+
+      <div class="core-flex core-flex-column core-align-items-center time-container mountain-time-container">
+        <p>Mountain</p>
+        <p class="time-text core-center core-align-self-stretch" id="mountain-time"></p>
+      </div>
+
+      <div class="core-flex core-flex-column core-align-items-center time-container central-time-container">
+        <p>Central</p>
+        <p class="time-text core-center core-align-self-stretch" id="central-time"></p>
+      </div>
+
+      <div class="core-flex core-flex-column core-align-items-center time-container eastern-time-container">
+        <p>Eastern</p>
+        <p class="time-text core-center core-align-self-stretch" id="eastern-time"></p>
+      </div>
+    </div>
+    
+    <img src="assets/timezonemap.png" alt="GCU Time Zone Map">
+
+    <div class="core-flex other-times-container core-align-self-stretch">
+      <div class="core-flex core-flex-column core-align-items-center time-container alaska-time-container">
+        <p>Alaska</p>
+        <p class="time-text core-center core-align-self-stretch" id="alaska-time"></p>
+      </div>
+
+      <div class="core-flex core-flex-column core-align-items-center time-container hawaii-time-container">
+        <p>Hawaii</p>
+        <p class="time-text core-center core-align-self-stretch" id="hawaii-time"></p>
+      </div>
+    </div>
   </main>
 </body>
 </html>

@@ -1,40 +1,47 @@
 :root {
     font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 header {
     background: 
-    /* black transparent stripes on top */
     repeating-linear-gradient(
       135deg,                       
-      rgba(0,0,0,0.1) 0px,          /* start black (20% opacity) */
-      rgba(0,0,0,0.1) 1px,          /* thin black line (1px thick) */
-      transparent 1px,              /* gap starts */
-      transparent 3px               /* total stripe width = 3px */
+      rgba(0,0,0,0.1) 0px,
+      rgba(0,0,0,0.1) 1px,
+      transparent 1px,
+      transparent 3px
     ),
-    /* purple gradient underneath */
+   
     linear-gradient(to bottom, #4A3B76, #4A3B76);
 }
 
 .dark-header-bar {
     background-color: var(--core-black);
     opacity: 0.4;
-    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.7);
+}
+
+.light-header-bar {
+    background-color: var(--core-black);
+    opacity: 0.2;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.8);
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 .header-text {
+    font-family: 'Times New Roman', Times, serif;
     color: var(--core-white);
     margin: 0;
-    padding-left: 6vw;
+    padding-left: 9vw;
     padding-top: 1.75rem;
-    padding-bottom: 3.75rem;
+    padding-bottom: 4rem;
     line-height: 0.6;
     display: inline-block;
     text-align: center;
@@ -56,8 +63,8 @@ header {
 }
 
 .navbar {
-    background-color: var(--core-black);
-    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 -24px 48px -8px rgba(0, 0, 0, 1);
 }
 
 .navbar p {
@@ -66,16 +73,104 @@ header {
     padding: 1rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    margin-left: 6vw;
+    margin-left: 9vw;
 }
 
 main {
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+section {
+    padding: 2vw;
+    border: 1px solid black;
 }
 
 .section-title-text {
     margin-top: 3rem;
     border-bottom: 2px solid var(--core-grey-300);
     padding-bottom: 0.75rem;
+}
+
+main > img {
+    max-width: 70%;
+}
+
+.main-times-container {
+    gap: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.other-times-container {
+    margin-left: 5vw;
+    gap: 15vw;
+    margin-top: -1rem;
+}
+
+.main-time-zones-container .time-container:nth-child(3) {
+  transform: translateX(-30px);
+}
+
+.time-container {
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.arizona-time-container {
+    background-color: rgb(95, 51, 217);
+    font-size: 2.25rem;
+}
+
+.local-time-container {
+    background-color: var(--core-gray-400);
+    color: var(--core-black);
+    font-size: 2.25rem;
+}
+
+#local-time {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+}
+
+.pacific-time-container {
+    background-color: #FDD501;
+    color: var(--core-black);
+}
+
+.mountain-time-container {
+    background-color: #87CCE9;
+    color: var(--core-black);
+}
+
+.central-time-container {
+    background-color: #FC9E78;
+    color: var(--core-black);
+}
+
+.eastern-time-container {
+    background-color: #35CC33;
+    color: var(--core-black);
+}
+
+.alaska-time-container {
+    background-color: #B0D8E4;
+    color: var(--core-black);
+}
+
+.hawaii-time-container {
+    background-color: #4ADDD1;
+    color: var(--core-black);
+}
+
+.time-text {
+    font-size: 2rem;
+    color: var(--core-white);
+    background-color: var(--core-black);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
