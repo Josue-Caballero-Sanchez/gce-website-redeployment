@@ -84,11 +84,6 @@ main {
     padding-bottom: 5rem;
 }
 
-section {
-    padding: 2vw;
-    border: 1px solid black;
-}
-
 .section-title-text {
     margin-top: 3rem;
     border-bottom: 2px solid var(--core-grey-300);
@@ -135,8 +130,8 @@ main > img {
 }
 
 #local-time {
-    padding-left: 2.25rem;
-    padding-right: 2.25rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .pacific-time-container {
@@ -192,6 +187,45 @@ main > img {
 
     .local-time-container {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .header-text {
+        padding-left: 1rem;
+    }
+
+    .section-title-text {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .navbar p {
+        margin-left: 1rem;
+    }
+
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main-time-zones-container .time-container:nth-child(3) {
+        transform: translateX(0px);
+    }
+
+    .time-container {
+        font-size: 1rem;
+    }
+
+    .time-text {
+        font-size: 1rem;
+    }
+
+    .arizona-time-container {
+        font-size: 1.5rem;
+    }
+
+    .local-time-container {
+        font-size: 1.5rem;
     }
 }
 
