@@ -93,6 +93,8 @@ section {
     margin-top: 3rem;
     border-bottom: 2px solid var(--core-grey-300);
     padding-bottom: 0.75rem;
+    margin-left: 9vw;
+    margin-right: 9vw;
 }
 
 main > img {
@@ -174,3 +176,22 @@ main > img {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+@media (max-width: 850px) {
+    .time-container {
+        font-size: 1.5rem;
+    }
+
+    .time-text {
+        font-size: 1.5rem;
+    }
+
+    .arizona-time-container {
+        font-size: 2rem;
+    }
+
+    .local-time-container {
+        font-size: 2rem;
+    }
+}
+
