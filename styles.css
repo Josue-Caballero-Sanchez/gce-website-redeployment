@@ -102,9 +102,9 @@ main > img {
 }
 
 .other-times-container {
-    margin-left: 5vw;
-    gap: 15vw;
-    margin-top: -1rem;
+    margin-left: 7vw;
+    gap: 12vw;
+    margin-top: -1.1rem;
 }
 
 .main-time-zones-container .time-container:nth-child(3) {
@@ -172,6 +172,13 @@ main > img {
     padding-right: 1rem;
 }
 
+@media (min-width: 1800px) {
+    .other-times-container {
+        margin-left: 5vw;
+        gap: 15rem;
+    }
+}
+
 @media (max-width: 850px) {
     .time-container {
         font-size: 1.5rem;
@@ -210,6 +217,12 @@ main > img {
 
     .main-time-zones-container .time-container:nth-child(3) {
         transform: translateX(0px);
+    }
+
+    .other-times-container {
+        margin-left: 7vw;
+        gap: 12vw;
+        margin-top: -0.5rem;
     }
 
     .time-container {

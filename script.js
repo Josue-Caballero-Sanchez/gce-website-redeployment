@@ -1,11 +1,9 @@
 function UpdateTimes() {
-    const isMobile = window.screen.width <= 650 ? true : false;
-
     const now = new Date();
     const formatOptions = { 
         hour: 'numeric', 
         minute: '2-digit',
-        hour12: !isMobile
+        hour12: true
     };
 
     const timeZones = {
